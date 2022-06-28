@@ -1,0 +1,13 @@
+<h1>{{titulo}}:</h1>
+<section>
+    <div  *ngFor="let produto of produtos" [ngClass]="{'sem-estoque': produto.quantidade === 0 }">
+        <div *ngIf="produto.quantidade > 0" >
+            <img src="{{produto.imagem}}">
+            <h3>{{produto.descricao}}</h3>
+            <h4>Preço: {{produto.preco}}</h4>
+            <p>Quantidade: {{produto.quantidade}}</p>
+            <button>Comprar</button>
+            <p [ngClass] = "{ 'promocao': produto.emPromocao, 'sem-promocao': !produto.emPromocao}">{{produto.emPromocao ? 'Preço promocional' : 'Preço normal'}}</p>
+        </div>  
+    </div>
+</section>

@@ -1,0 +1,44 @@
+.promocao {
+    color: green;
+    font-weight: bold;
+}
+
+.sem-promocao {
+    color: red;
+    font-weight: bold;
+}
+
+.sem-estoque {
+    display: none;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;    
+    align-items: center;    
+}
+
+h1 {   
+    text-align: center;
+    margin: 100px 0 100px 0;
+}
+
+button {
+    width: 90px;    
+    font-weight: bold;
+
+
+}
+
+button:hover {
+    background-color: rgb(119, 119, 162);
+    font-style: italic;
+    cursor: pointer;
+    
+}
+
